@@ -17,12 +17,12 @@ function calculatesFarePrice(start, destination) {
     const distance = distanceTravelledInFeet(start, destination);
 
     if (distance <= 400) {
-        return 0; // First 400 feet are free
+        return 0; 
     } else if (distance > 400 && distance <= 2000) {
-        return (distance - 400) * 0.02; // 2 cents per foot after 400 feet
+        return (distance - 400) * 0.02; 
     } else if (distance > 2000 && distance <= 2500) {
-        return 25; // Flat rate for distances over 2000 feet and under 2500 feet
+        return 25; 
     } else {
-        return "cannot travel that far"; // Over 2500 feet is not allowed
+        return "cannot travel that far";
     }
 }
